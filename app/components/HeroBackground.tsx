@@ -77,7 +77,7 @@ export default function HeroBackground() {
             {/* Resume Button */}
             <div className="absolute top-8 right-8 z-50">
                 <a
-                    href="/resume.pdf"
+                    href="/Sanskaar_s_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full text-white font-chillax font-medium text-lg transition-all duration-300 hover:scale-105 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-white/20 shadow-lg shadow-black/20"
