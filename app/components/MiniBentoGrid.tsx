@@ -103,7 +103,7 @@ export default function MiniBentoGrid() {
             <div className="flex flex-col items-start max-w-2xl">
                 <div className="text-white text-6xl font-clash mb-6">Hey, I'm Sanskaar</div>
                 <div className="text-white text-4xl font-chillax leading-relaxed">
-                    A passionate software engineer transforming ideas into immersive digital experiences. Welcome to my portfolio website.
+                    I like building AI things that don't fall apart in production. RAG pipelines, multimodal agents, LLM apps — that's my zone. Finishing my B.Tech at MAIT this May and actively looking for remote AI/ML opportunities.
                 </div>
             </div>
 
