@@ -95,28 +95,28 @@ export default function MiniBentoGrid() {
     }, [])
 
     return (<>
-        <div className="flex flex-col items-center justify-center text-white text-6xl mt-35 font-clash font-semibold">
-            <span className="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-2xl">ABOUT ME</span>
+        <div className="flex flex-col items-center justify-center text-white text-4xl md:text-6xl mt-20 md:mt-35 font-clash font-semibold px-4">
+            <span className="bg-white/10 backdrop-blur-md border border-white/20 px-6 md:px-8 py-3 md:py-4 rounded-2xl text-center">ABOUT ME</span>
         </div>
-        <div ref={sectionRef} className="h-screen bg-transparent flex items-center justify-between px-20 pt-12 gap-16">
+        <div ref={sectionRef} className="min-h-screen bg-transparent flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-20 py-12 md:pt-12 gap-12 md:gap-16">
             {/* Left: Text Section */}
-            <div className="flex flex-col items-start max-w-2xl">
-                <div className="text-white text-6xl font-clash mb-6">Hey, I'm Sanskaar</div>
-                <div className="text-white text-4xl font-chillax leading-relaxed">
+            <div className="flex flex-col items-start max-w-2xl text-center md:text-left">
+                <div className="text-white text-4xl md:text-6xl font-clash mb-4 md:mb-6 w-full">Hey, I'm Sanskaar</div>
+                <div className="text-white text-xl md:text-4xl font-chillax leading-relaxed">
                     I like building AI things that don't fall apart in production. RAG pipelines, multimodal agents, LLM apps — that's my zone. Finishing my B.Tech at MAIT this May and actively looking for remote AI/ML opportunities.
                 </div>
             </div>
 
             {/* Right: Tech Stack Section */}
-            <div className="max-w-md w-full">
-                <h2 className="font-clash text-[#E7EAE5] text-4xl font-bold mb-6 text-left">
-                    <span className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-2xl inline-block">Tech Stack</span>
+            <div className="w-full max-w-md mt-8 md:mt-0">
+                <h2 className="font-clash text-[#E7EAE5] text-2xl md:text-4xl font-bold mb-6 text-center md:text-left">
+                    <span className="bg-white/10 backdrop-blur-md border border-white/20 px-4 md:px-6 py-2 md:py-3 rounded-2xl inline-block">Tech Stack</span>
                 </h2>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                     {techStack.map((tech) => (
                         <motion.div
                             key={tech.name}
-                            className={`${tech.span} bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-xl p-3 flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer`}
+                            className={`${tech.span} bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-xl p-3 flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer min-h-[80px]`}
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >

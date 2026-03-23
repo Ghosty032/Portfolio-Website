@@ -118,11 +118,11 @@ export default function LiveStatusFooter() {
                     </div>
 
                     {/* Connect - 2x2 Grid */}
-                    <div className="space-y-4 pl-30">
+                    <div className="space-y-4 pl-0 md:pl-30 flex flex-col items-center md:items-start">
                         <h3 className="font-clash font-bold text-zinc-400 text-sm uppercase tracking-wider">
                             Connect
                         </h3>
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className="grid grid-cols-2 gap-3 justify-items-center md:justify-items-start">
                             <a
                                 href="https://github.com/ghosty032"
                                 target="_blank"
