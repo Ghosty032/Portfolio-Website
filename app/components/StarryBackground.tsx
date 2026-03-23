@@ -73,11 +73,15 @@ export default function StarryBackground() {
         }
         animate()
 
-        // Handle resize
+        // Handle resize with debounce
+        let resizeTimeout: NodeJS.Timeout
         const handleResize = () => {
-            camera.aspect = window.innerWidth / window.innerHeight
-            camera.updateProjectionMatrix()
-            renderer.setSize(window.innerWidth, window.innerHeight)
+            clearTimeout(resizeTimeout)
+            resizeTimeout = setTimeout(() => {
+                camera.aspect = window.innerWidth / window.innerHeight
+                camera.updateProjectionMatrix()
+                renderer.setSize(window.innerWidth, window.innerHeight)
+            }, 100)
         }
         window.addEventListener('resize', handleResize)
 

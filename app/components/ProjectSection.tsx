@@ -8,26 +8,29 @@ gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
     {
-        title: "Twitter Sentiment Analysis",
-        description: "Created a tweet sentiment analysis application using Python and use Twitter API to fetch tweets.",
-        tech: ["Python", "Twitter API", "Tailwind"],
+        title: "VaultFlow.ai",
+        description: "Multi-format AI knowledge base that ingests 7 file types (PDF, DOCX, PPTX, YouTube, web articles & more) and builds a RAG pipeline over them using pgvector. Features a multimodal agent for diagram understanding and auto-generates prerequisite learning roadmaps using NetworkX.",
+        tech: ["Next.js", "FastAPI", "Supabase", "pgvector", "NVIDIA NIM", "NetworkX", "Python"],
+        link: "https://github.com/Ghosty032/Vaultflow-ai"
     },
     {
-        title: "Retinal OCT Classification",
-        description: "Devloped a Deep learning model using Convolutional Neural Network(CNN) to classify retinal damage using Optical Coherence Tomography(OCT) test scans and hosted it on a web platform using Flask API.",
-        tech: ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Tailwind"],
+        title: "FashAr-V2",
+        description: "End-to-end AI styling platform that extracts clothing metadata from user images via a multimodal vision model, then runs RAG over a live fashion catalog to generate shoppable outfit recommendations in under 10 seconds.",
+        tech: ["Next.js", "FastAPI", "LangGraph", "NVIDIA NIM", "Pinecone", "RAG"],
+        link: "https://github.com/Ghosty032/FashAr-V2"
     },
     {
-        title: "Stock Market Prediction",
-        description: "Devolved a model that uses yfinance API for retrieval of historical stock prices (Open, High, Low, Close, Volume) for companies like AAPL, TSLA, etc.",
-        tech: ["Python", "TensorFlow", "Keras", "OpenCV"],
+        title: "Retinal OCT Classifier",
+        description: "Deep learning model for early detection of retinal diseases (CNV, DME, DRUSEN) from OCT scans achieving 92% accuracy. Handles class imbalance via SMOTE and custom loss functions with a clinical dashboard for file upload and diagnosis.",
+        tech: ["Python", "TensorFlow", "Keras", "CNN", "Flask", "Tailwind"],
+        link: "https://github.com/Ghosty032/retinal-oct"
     },
     {
-        title: "Web Scrapper",
-        description: "A web scrapper that uses BeautifulSoup to scrape data from a website and store it in a database for my company (NexEdge Pvt. Ltd) where i interned in summer for 2 months .",
-        tech: ["Python", "BeautifulSoup", "Flask",],
+        title: "LinkedIn Content Automation",
+        description: "Automated content pipeline that scrapes AI/ML news, processes it through an LLM to generate LinkedIn-formatted posts, and schedules daily publishing via n8n.",
+        tech: ["Python", "n8n", "LLM APIs", "BeautifulSoup"],
     },
-]
+];
 
 export default function ProjectSection() {
     const pathRef = useRef<SVGPathElement>(null)

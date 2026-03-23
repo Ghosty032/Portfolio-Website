@@ -45,6 +45,7 @@ export default function HeroBackground() {
             },
         })
 
+
         // Fade out hero background as well
         gsap.to(containerRef.current, {
             opacity: 0,
@@ -58,7 +59,7 @@ export default function HeroBackground() {
     })
 
     return (
-        <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-black">
+        <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-black text-white">
             {/*<Image
                 src="/image.png"
                 alt="Hero background"
@@ -68,9 +69,9 @@ export default function HeroBackground() {
 
             <div
                 ref={contentRef}
-                className="mt-72 flex flex-col items-center justify-end mb-125 text-9xl text-white font-plus-jakarta-sans font-bold ">
+                className="mt-72 flex flex-col items-center justify-end mb-125 text-[clamp(4rem,12vw,12rem)] tracking-tight text-white font-plus-jakarta-sans font-bold leading-none">
                 WELCOME
-                <span className="pt-12 text-4xl font-chillax">To my Portfolio</span>
+                <span className="pt-4 md:pt-12 text-[clamp(1.5rem,4vw,3rem)] font-chillax tracking-normal text-white">To my Portfolio</span>
             </div>
 
             {/* Resume Button */}
