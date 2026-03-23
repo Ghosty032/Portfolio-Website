@@ -24,8 +24,8 @@ export default function FloatingPillNav() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="fixed top-8 left-1/2 -translate-x-1/2 z-50"
         >
-            <div className="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-full px-6 py-3 shadow-xl">
-                <div className="flex items-center gap-6">
+            <div className="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-full px-4 md:px-6 py-3 shadow-xl">
+                <div className="flex items-center gap-4 md:gap-6">
                     {navItems.map((item, index) => (
                         <button
                             key={item.label}
@@ -38,6 +38,19 @@ export default function FloatingPillNav() {
                             </span>
                         </button>
                     ))}
+
+                    {/* Divider */}
+                    <div className="w-px h-5 bg-zinc-700" />
+
+                    {/* Resume Link */}
+                    <a
+                        href="/Sanskaar_s_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-white font-outfit text-sm font-medium transition-all duration-300"
+                    >
+                        Resume
+                    </a>
                 </div>
             </div>
         </motion.nav>

@@ -59,7 +59,7 @@ export default function HeroBackground() {
     })
 
     return (
-        <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-black text-white">
+        <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-black text-white flex flex-col">
             {/*<Image
                 src="/image.png"
                 alt="Hero background"
@@ -69,21 +69,9 @@ export default function HeroBackground() {
 
             <div
                 ref={contentRef}
-                className="mt-40 md:mt-72 px-4 flex flex-col items-center justify-end mb-20 md:mb-125 text-[clamp(3rem,10vw,12rem)] tracking-tight text-white font-plus-jakarta-sans font-bold leading-none text-center">
+                className="flex flex-col items-center justify-center flex-1 px-4 text-[clamp(3rem,10vw,12rem)] tracking-tight text-white font-plus-jakarta-sans font-bold leading-none text-center">
                 WELCOME
                 <span className="pt-2 md:pt-12 text-[clamp(1.2rem,3vw,3rem)] font-chillax tracking-normal text-white">To my Portfolio</span>
-            </div>
-
-            {/* Resume Button */}
-            <div className="absolute top-8 right-8 z-50">
-                <a
-                    href="/Sanskaar_s_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full text-white font-chillax font-medium text-lg transition-all duration-300 hover:scale-105 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-white/20 shadow-lg shadow-black/20"
-                >
-                    <span className="relative z-10">Resume</span>
-                </a>
             </div>
 
             {/* Bottom Left Arrow */}
@@ -107,7 +95,7 @@ export default function HeroBackground() {
             />
 
             {/* Live Clock */}
-            <div className="absolute top-10 left-10 flex flex-col items-start z-10 mix-blend-difference">
+            <div className="absolute top-24 md:top-10 left-6 md:left-10 flex flex-col items-start z-10 mix-blend-difference">
                 <div className="flex items-center gap-2 text-zinc-400 mb-1">
                     <Clock className="w-4 h-4" />
                     <span className="font-chillax text-sm uppercase tracking-widest">Local Time</span>

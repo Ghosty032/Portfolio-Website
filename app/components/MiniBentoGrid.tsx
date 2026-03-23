@@ -75,6 +75,25 @@ const techStack = [
             </svg>
         ),
     },
+    {
+        name: "n8n",
+        span: "col-span-1",
+        icon: (
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.8 4.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4m-1.6 3.2a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0M4 12.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4m-1.6 3.2a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0M20 12.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4m-1.6 3.2a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0" />
+                <path d="M10.4 9.6L5.6 13.6M14.4 9.6l4.8 4" />
+            </svg>
+        ),
+    },
+    {
+        name: "RAG",
+        span: "col-span-1",
+        icon: (
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7h16M4 12h16M4 17h10M19 15l-2 2 2 2M21 17h-4" />
+            </svg>
+        ),
+    },
 ]
 
 export default function MiniBentoGrid() {
