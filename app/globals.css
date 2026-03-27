@@ -42,18 +42,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
   --font-chillax: var(--font-chillax);
   --font-clash: var(--font-clash);
   --font-new-title: var(--font-new-title);
-  --font-comico: var(--font-comico);
-  --font-notable: var(--font-notable);
-  --font-syne: var(--font-syne);
   --font-outfit: var(--font-outfit);
   --font-plus-jakarta-sans: var(--font-plus-jakarta-sans);
   --font-pixelify-sans: var(--font-pixelify-sans);
   --font-stalinist-one: var(--font-stalinist-one);
-  --font-iceberg: var(--font-iceberg);
 }
 
 @media (prefers-color-scheme: dark) {

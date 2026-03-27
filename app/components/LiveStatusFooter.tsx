@@ -165,7 +165,7 @@ export default function LiveStatusFooter() {
                 <div className="pt-8 border-t border-zinc-800">
                     <div className="flex items-center justify-center gap-2 font-chillax text-zinc-500 text-sm">
                         <span>Built using</span>
-                        <span className="font-clash text-zinc-400">AntiGravity</span>
+                        <span className="font-clash text-zinc-400">Next.js</span>
                     </div>
                 </div>
             </div>

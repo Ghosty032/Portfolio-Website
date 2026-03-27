@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist, Geist_Mono, Syne, Outfit, Plus_Jakarta_Sans, Notable, Pixelify_Sans, Stalinist_One, Iceberg } from "next/font/google";
+import { Geist, Outfit, Plus_Jakarta_Sans, Pixelify_Sans, Stalinist_One } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
-  subsets: ["latin"],
-});
 
-const iceberg = Iceberg({
-  variable: "--font-iceberg",
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const pixelifySans = Pixelify_Sans({
   variable: "--font-pixelify-sans",
@@ -26,11 +17,7 @@ const stalinistOne = Stalinist_One({
   weight: "400",
 });
 
-const notable = Notable({
-  variable: "--font-notable",
-  subsets: ["latin"],
-  weight: "400",
-});
+
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -47,10 +34,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 const chillax = localFont({
   src: "./fonts/Chillax-Variable.woff2",
@@ -58,11 +42,7 @@ const chillax = localFont({
   display: "swap",
 });
 
-const comico = localFont({
-  src: "./fonts/Comico-Regular.woff2",
-  variable: "--font-comico",
-  display: "swap",
-});
+
 
 
 const clash = localFont({
@@ -95,7 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${chillax.variable} ${comico.variable} ${clash.variable} ${newTitle.variable} ${syne.variable} ${outfit.variable} ${plusJakartaSans.variable} ${notable.variable} ${pixelifySans.variable} ${stalinistOne.variable} ${iceberg.variable} antialiased cursor-none`}
+        className={`${geistSans.variable} ${chillax.variable} ${clash.variable} ${newTitle.variable} ${outfit.variable} ${plusJakartaSans.variable} ${pixelifySans.variable} ${stalinistOne.variable} antialiased cursor-none`}
       >
         <CustomCursor />
         <SmoothScroll>

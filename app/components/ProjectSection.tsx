@@ -11,7 +11,7 @@ const projects = [
         title: "VaultFlow.ai",
         description: "Multi-format AI knowledge base that ingests 7 file types (PDF, DOCX, PPTX, YouTube, web articles & more) and builds a RAG pipeline over them using pgvector. Features a multimodal agent for diagram understanding and auto-generates prerequisite learning roadmaps using NetworkX.",
         tech: ["Next.js", "FastAPI", "Supabase", "pgvector", "NVIDIA NIM", "NetworkX", "Python"],
-        link: "https://github.com/Ghosty032/Vaultflow-ai"
+        link: "https://github.com/Ghosty032/Vaultflow.ai"
     },
     {
         title: "FashAr-V2",
@@ -29,6 +29,7 @@ const projects = [
         title: "LinkedIn Content Automation",
         description: "Automated content pipeline that scrapes AI/ML news, processes it through an LLM to generate LinkedIn-formatted posts, and schedules daily publishing via n8n.",
         tech: ["Python", "n8n", "LLM APIs", "BeautifulSoup"],
+        link: "https://github.com/Ghosty032/Linkedin-Automation"
     },
 ];
 
@@ -129,7 +130,12 @@ export default function ProjectSection() {
                             ref={(el) => { cardsRef.current[i] = el }}
                             className={`flex ${i % 2 === 0 ? "justify-end" : "justify-start"}`}
                         >
-                            <div className="w-full max-w-md group">
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full max-w-md group block"
+                            >
                                 {/* Card */}
                                 <div className="relative border border-white/10 rounded-2xl p-8 bg-white/[0.03] backdrop-blur-sm hover:border-[#2bdace]/40 transition-all duration-500 hover:bg-white/[0.06]">
                                     {/* Project number */}
@@ -162,7 +168,7 @@ export default function ProjectSection() {
                                     {/* Hover glow */}
                                     <div className="absolute inset-0 rounded-2xl bg-[#2bdace]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     ))}
                 </div>
